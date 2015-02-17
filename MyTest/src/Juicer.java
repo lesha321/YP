@@ -19,7 +19,7 @@ public class Juicer {
 		}
 	}
 	
-	public static Juice getList(int ListPosition)
+	public static Juice getListPosition(int ListPosition)
 	{
 		return listOfJuices.get(ListPosition);
 	}

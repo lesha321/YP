@@ -28,23 +28,12 @@ public class Juice implements Comparable<Juice> {
 	}
 
 	
-	///////////////////////////////////////////////
-	
-	/*private   ArrayList<Juice> components = new ArrayList<Juice>();*/
-	
-	/*public boolean isSubJuice(Juice other){
-		int result = this.compareTo(other);
-		if(result==0) return true;
-		else {
-			if(components.size() > other.getComponents().size())
-				return false;
-			ArrayList<Juice> otherComponents = other.getComponents();
-			for(int i = 0 ; i < components.size() ; i ++)
-				if(!otherComponents.contains(components.get(i)))
-					return false;
-			return true;
-		}
-	}*/
+	public String getElement(int j) 
+	{
+		if(j<0 || j >countNames)
+			return "";
+		return names[j];
+	}
 
 	public boolean isSubJuice(Juice other)
 	{
@@ -79,8 +68,6 @@ public class Juice implements Comparable<Juice> {
 		else return names.length - o.names.length;
 	}
 	
-	/*public ArrayList<Juice> getComponents() {
-		return (ArrayList<Juice>)components.clone();
-	}*/
+	
 
 }

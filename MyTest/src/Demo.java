@@ -14,12 +14,10 @@ public class Demo {
 		
 		Collections.sort(juices);
 		
-		System.out.println("Список соков : ");
-		for (Juice juice : juices) 
-			System.out.println(juice);
+	
 		
 		juicer.findMin(juices);
-		System.out.println("Кол-во чисток : " + juicer.getNumberOfCleanings());
+		
 		
 		 BufferedWriter out3 = new BufferedWriter(new FileWriter("juice3.out.txt"));
 		 int t1 = juicer.getNumberOfCleanings();
